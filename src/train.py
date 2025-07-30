@@ -6,8 +6,8 @@ model = YOLO('src/config/yolov12.yaml')
 # Train the model
 results = model.train(
     data='src/dataset/data.yaml',      # Update this to your dataset YAML if needed
-    epochs=600,
-    batch=64,
+    epochs=800,
+    batch=256,
     imgsz=640,
     scale=0.5,             # S:0.9; M:0.9; L:0.9; X:0.9
     mosaic=1.0,

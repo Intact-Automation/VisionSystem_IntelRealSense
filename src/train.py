@@ -1,16 +1,17 @@
 from ultralytics import YOLO
 
 # Initialize the YOLOv12 nano model (make sure yolov12n.yaml is available)
-model = YOLO('src/config/yolov12.yaml')
+model = YOLO('runs/detect/train/weights/last.pt')
 
 # Train the model
 results = model.train(
     data='src/dataset/data.yaml',      # Update this to your dataset YAML if needed
-    epochs=2000,
+    epochs=1200,
     batch=512,
     imgsz=640,
     scale=0.5,             # S:0.9; M:0.9; L:0.9; X:0.9
     mosaic=1.0,
+    resume=True,  # This tells YOLO to resume from the given weights
     mixup=0.0,             # S:0.05; M:0.15; L:0.15; X:0.2
     copy_paste=0.1,        # S:0.15; M:0.4; L:0.5; X:0.6
     device="0",

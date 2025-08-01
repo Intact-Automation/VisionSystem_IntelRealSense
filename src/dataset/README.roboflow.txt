@@ -1,8 +1,8 @@
 
-My First Project - v1 2025-07-29 7:48pm
+My First Project - v2 2025-08-01 7:31pm
 ==============================
 
-This dataset was exported via roboflow.com on July 30, 2025 at 2:00 PM GMT
+This dataset was exported via roboflow.com on August 1, 2025 at 2:03 PM GMT
 
 Roboflow is an end-to-end computer vision platform that helps you
 * collaborate with your team on computer vision projects
@@ -17,7 +17,7 @@ visit https://github.com/roboflow/notebooks
 
 To find over 100k other datasets and pre-trained models, visit https://universe.roboflow.com
 
-The dataset includes 934 images.
+The dataset includes 1133 images.
 Objects are annotated in YOLOv12 format.
 
 The following pre-processing was applied to each image:

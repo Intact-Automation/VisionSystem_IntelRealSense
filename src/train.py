@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 # Initialize the YOLOv12 nano model (make sure yolov12n.yaml is available)
-model = YOLO('runs/detect/train/weights/last.pt')
+model = YOLO('src/configs/yolov12n.yaml')
 
 # Train the model
 results = model.train(

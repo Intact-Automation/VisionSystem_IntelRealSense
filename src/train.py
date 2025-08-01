@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 # Initialize the YOLOv12 nano model (make sure yolov12n.yaml is available)
-model = YOLO('src/configs/yolov12.yaml')
+model = YOLO('src/config/yolov12.yaml')
 
 # Train the model
 results = model.train(

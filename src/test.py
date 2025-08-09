@@ -5,7 +5,7 @@ import cv2
 model = YOLO('runs/detect/train/weights/best.pt')
 
 # Open the default webcam (index 0)
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(4)
 
 if not cap.isOpened():
     print("Error: Could not open webcam.")
